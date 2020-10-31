@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>Consignment</title>
+        <style type="text/css">
+          body {
+              background-color: #CEF6CE;
+          }
+          h1 {
+              color: #08088A;
+              font-family: verdana;
+              text-align: center;
+          }
+          table {
+              font-size: 15px;
+          }
+          table {
+              margin-right: auto;
+              margin-left: auto;
+          }
+          #result {
+              text-align: center;
+          }
+          .costtable {
+              float: right;
+              text-align: center;
+          }
+          #costtable {
+              border: 1px black;
+              border-style: solid;
+              text-align: center;
+              font-size: 15px;
+              float: right;
+          }
+        </style>
+        <script type="text/javascript" charset="utf-8" language="Javascript">
+            function costcalculation(){
+                var weight = document.getElementById("kilogramval").value;
+                
+                var ty1 = document.getElementById("type1").checked;
+                var ty2 = document.getElementById("type2").checked;
+                var ty3 = document.getElementById("type3").checked;
+                
+                var amt = 0;
+                var tax = 0, totalAmt = 0;
+                var loc = document.getElementsByName("location")[0].value;
+                
+                if(ty1){
+                    if(weight >= 5 && weight < 15) amt = 125;
+                    else if(weight >= 15 && weight < 25) amt = 175;
+                    else amt = 200;
+                }
+                else if(ty2){
+                    if(weight >= 5 && weight < 15) amt = 175;
+                    else if(weight >= 15 && weight < 25) amt = 225;
+                    else amt = 250;
+                }
+                else{
+                    if(weight >= 5 && weight < 15) amt = 225;
+                    else if(weight >= 15 && weight < 25) amt = 375;
+                    else amt = 400;
+                }
+                
+                if(loc == "London - 1800") totalAmt = (amt * weight) * 1.10;
+                else if(loc == "New York - 3100") totalAmt = (amt * weight) * 1.15;
+                else if(loc == "Tokyo - 2800") totalAmt = (amt * weight) * 1.20;
+                else totalAmt = (amt * weight) * 1.00;
+
+                document.getElementById("result").innerHTML = "Your shipment has been accepted. Amount to be paid is Rs." + Math.round(totalAmt);
+                return false;
+            }
+        </script>
+    </head>
+    <body>
+        <form onsubmit="return costcalculation()">
+            <h1>Air Cargo Service</h1>
+            <table>
+               <tr>
+                   <td>Customer Logistics Account Number</td>
+                   <td><input type="text" name="accnumber" id="accnumber" pattern="^[A-Za-z]{4}[_]{1}[0-9]{3}$" placeholder="Enter the Unique ID" required /></td>
+               </tr>
+               <tr>
+                   <td>Mobile</td>
+                   <td><input type="text" name="mobile" id="mobile" pattern="[789]{1}[0-9]{9}" required /></td>
+               </tr>
+               <tr>
+                   <td>Email-ID</td>
+                   <td><input type="text" name="emailid" id="emailid" required /></td>
+               </tr>
+               <tr>
+                   <td>Item to be Shipped</td>
+                   <td><input type="text" name="item" id="item" pattern="[A-Za-z ]{}" placeholder="Item Name" required /></td>
+               </tr>
+               <tr>
+                   <td>Item Category</td>
+                   <td>
+                       <select name="itemtype" id="category" required>
+                           <option name="Electronics" value="Electronics">Electronics</option>
+                           <option name="Attires" value="Attires">Attires</option>
+                           <option name="Toys" value="Toys">Toys</option>
+                           <option name="Non Poisonous Food" value="Non Poisonous Food">Non Poisonous Food</option>
+                       </select>
+                   </td>
+               </tr>
+               <tr>
+                   <td>Shipment Address</td>
+                   <td><textarea name="address" id="address" required></textarea></td>
+               </tr>
+               <tr>
+                   <td>Location</td>
+                   <td>
+                       <select name="location" id="category" required>
+                           <option id="London" value="London - 1800">London - 1800</option>
+                           <option id="Singapore" value="Singapore - 1400">Singapore - 1400</option>
+                           <option id="New York" value="New York - 3100">New York - 3100</option>
+                           <option id="Mexico City" value="Mexico City - 3300">Mexico City - 3300</option>
+                           <option id="Tokyo" value="Tokyo - 2800">Tokyo - 2800</option>
+                       </select>
+                   </td>
+               </tr>
+               <tr>
+                   <td>Weight in Kilograms</td>
+                   <td><input type="number" id="kilogramval" name="weight" min="5" max="36" required /></td>
+               </tr>
+               <tr>
+                   <td>Service Type</td>
+                   <td>
+                       <input type="radio" name="servicetype" id="type1" value="Normal" required />Normal
+                       <input type="radio" name="servicetype" id="type2" value="Express" required />Express
+                       <input type="radio" name="servicetype" id="type3" value="Platinum" required />Platinum
+                   </td>
+               </tr>
+               <tr>
+                   <td><input type="submit" id="submit" name="submit" value="Book My Consignment"></td>
+                   <td><input type="reset" value="Clear" name="clear" id="clear"></td>
+               </tr>
+               <tr>
+                   <td>
+                       <div name="result" id="result"></div>
+                   </td>
+               </tr>
+            </table>
+        </form>
+        <!-- <div name="result" id="result"></div> -->
+        <div class="costtable">
+            <p>Shipment Cost Chart</p>
+            <table id="costtable" border="1" value="costtable">
+                <tr>
+                    <td><strong>Service Type</strong></td>
+                    <td><strong>Weight (in kg)</strong></td>
+                    <td><strong>Amount (per Kg)</strong></td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Normal</td>
+                    <td>5 to below 15</td>
+                    <td>125</td>
+                </tr>
+                <tr>
+                    <td>15 to 25</td>
+                    <td>175</td>
+                </tr>
+                <tr>
+                    <td>Above 25 to 36</td>
+                    <td>200</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Express</td>
+                    <td>5 to below 15</td>
+                    <td>175</td>
+                </tr>
+                <tr>
+                    <td>15 to 25</td>
+                    <td>225</td>
+                </tr>
+                <tr>
+                    <td>Above 25 to 36</td>
+                    <td>250</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Platinum</td>
+                    <td>5 to below 15</td>
+                    <td>225</td>
+                </tr>
+                <tr>
+                    <td>15 to 25</td>
+                    <td>375</td>
+                </tr>
+                <tr>
+                    <td>Above 25 to 36</td>
+                    <td>400</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
