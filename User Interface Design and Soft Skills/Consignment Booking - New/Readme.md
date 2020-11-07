@@ -58,7 +58,7 @@ _Book Consignment – This will contain details that will be entered by the user
 
 **Use JavaScript for doing the below calculation:**
 
-Name the Javascript as  ```_costcalculation()_```
+Name the Javascript as  ```costcalculation()```
 
 Customer on entering the valid values and clicking the submit button, the total amount has to be calculated and displayed as “Your shipment has been accepted. Amount to be paid is Rs.” ……… in a div tag. The div tag name should be “result”.
 
