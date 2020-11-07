@@ -10,7 +10,7 @@ The trackAssociateStatus method takes the number of days as argument and sets th
 
  In the Main class, create an object for the Associate class; Get the details as shown in the sample input and assign the value for its attributes using the setters. Invoke the trackAssociateStatus method and find the work status and display the details as shown in the sample output.
 
-Sample Input1:
+**Sample Input1:**
 
 Enter the associate id:
 
@@ -24,11 +24,11 @@ Enter the number of days:
 
 45
 
- Sample Output1:
+**Sample Output1:**
 
 The associate john work status:Project phase
 
- Sample Input2:
+**Sample Input2:**
 
 Enter the associate id:
 
@@ -42,6 +42,6 @@ Enter the number of days:
 
 70
 
- Sample Output2:
+**Sample Output2:**
 
 The associate ram work status: Deployed in project
