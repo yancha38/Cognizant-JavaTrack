@@ -64,7 +64,8 @@ Customer on entering the valid values and clicking the submit button, the total 
 
 The amount should get rounded off to its nearest larger value.
 
-Formula to calculate the shipment cost is = **(Weight in Kg * Amount per Kg) + Tax**
+#### Formula to calculate the shipment cost is = **(Weight in Kg * Amount per Kg) + Tax** <br>
+
 
 *****Refer Shipment Cost Chart in screen shot for Amount per Kg for shipment*****
 
