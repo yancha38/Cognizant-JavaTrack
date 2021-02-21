@@ -8,4 +8,4 @@ Refer to the given schema diagram. Insert the below records into Rentals Table. 
 
 *NOTE: Maintain the same sequence of column order, as specified in the question description*
 
-![database diagram](../database_2.png)
+![database diagram](database_2.png)
