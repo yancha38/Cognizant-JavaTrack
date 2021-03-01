@@ -6,4 +6,4 @@ Write a query to display partner id, partner name, phone number of delivery part
 
 *NOTE: Maintain the same sequence of column order, as specified in the question description*
 
-![database diagram](../database_3.png)
+![database diagram](database_3.png)
