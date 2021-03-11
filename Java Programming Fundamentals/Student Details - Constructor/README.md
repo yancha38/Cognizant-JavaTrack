@@ -2,9 +2,9 @@
 
 Create a class Student with the private attributes
 
-- int studentId
+ _int studentId_
 
-- String studentName, studentAddress, collegeName. 
+_String studentName, studentAddress, collegeName_
 
 Include appropriate getter methods.
 
