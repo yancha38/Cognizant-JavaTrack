@@ -4,7 +4,7 @@
 
 `public double area()` <br> `public double volume()`
 
-### Create a public class Rectangle with private attributes :
+#### Create a public class Rectangle with private attributes :
 
 `double length` <br> `double width`
 
@@ -14,30 +14,25 @@
 
 _Area of rectangle is length * width_
 
-### Create a public class `Triangle` with private attributes :
+#### Create a public class `Triangle` with private attributes :
 
 `double base` <br> `double height` <br>
-**Write the public getters and setters for these attributes.
+**Write the public getters and setters for these attributes.**
 
-Triangle class should inherit the Shape class
+> `Triangle` class should inherit the `Shape` class
 
-Area of triangle is  1/2 * base * height
+_Area of triangle is  1/2 * base * height_
 
-Create a public class Cube with private attributes :
+#### Create a public class Cube with private attributes :
 
-`double length`
+`double length` <br> `double width` <br> `double height`
 
-`double width`
+**Write the public getters and setters for these attributes.**
 
-`double height`
+> `Cube` class should inherit the `Shape` class
 
-Write the public getters and setters for these attributes.
-
-Cube class should inherit the Shape class
-
-Area of cube is  2 * length * width + 2 * length * height + 2* width * height
-
-Volume of cube is  length * width * height
+_Area of cube is  2 * length * width + 2 * length * height + 2* width * height_ <br>
+_Volume of cube is  length * width * height_
 
 Create a public class Sphere with private attributes :
 
