@@ -23,11 +23,11 @@ Sample Input 1:
 
 Enter Id:
 101
-Enter Name:
+<br>Enter Name:
 Vivek
-Enter salary:
+<br>Enter salary:
 20000
-Enter PF percentage:
+<br>Enter PF percentage:
 7
 
 Sample Output 1:
