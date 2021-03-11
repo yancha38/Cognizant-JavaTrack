@@ -3,12 +3,11 @@
 Create a class Student with the private attributes
 
  _int studentId_
-
 _String studentName, studentAddress, collegeName_
 
-Include appropriate getter methods.
 
-Write 2 constructors for the Student class based on the below assumptions. 
+Include appropriate getter methods.
+Write 2 constructors for the ```Student``` class based on the below assumptions. 
 
 Assume most of the students are from “NIT” college. So user has to give input whether the student is from NIT or not. 
 
