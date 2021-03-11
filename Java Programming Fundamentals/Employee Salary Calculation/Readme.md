@@ -13,9 +13,9 @@ Create a Main class which has the main method which invokes the method to get th
 
 Also write a method :
 
-   ```public static Employee getEmployeeDetails()``` >-  which gets the employee details - id, name and salary, and returns the employee object.
+   ```public static Employee getEmployeeDetails()``` > which gets the employee details - id, name and salary, and returns the employee object.
 
-   ```public static int getPFPercentage()``` >-  which gets the PF percentage and returns the same
+   ```public static int getPFPercentage()``` > which gets the PF percentage and returns the same
 
 In the main method invoke the above two methods, and then call the calculateNetSalary method in Employee class and print the output as shown below.
 
