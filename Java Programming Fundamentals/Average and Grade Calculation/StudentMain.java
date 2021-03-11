@@ -7,11 +7,9 @@ public class StudentMain{
         
         System.out.println("Enter the id:");
         int id = s.nextInt();
-        //std.setId(id);
         
         System.out.println("Enter the name:");
         String name = s.next();
-        //std.setName(name);
         
         int no = 0;
         boolean flag = true;
@@ -27,7 +25,6 @@ public class StudentMain{
         int[] marks = new int[no];
         for(int i = 0; i < no; ++i){
             int mark = 0;
-            //mark[i] = getInt("Enter mark for subject " + (i + 1) + ":\n");
             
             while(true){
                 System.out.println("Enter mark for subject " +(i + 1) + ":");
