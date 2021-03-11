@@ -1,30 +1,23 @@
 # Shape - Area Volume Calculator
 
-Create an abstract public class Shape with the below public abstract methods :
+### Create an abstract public class Shape with the below public abstract methods :
 
-`public double area()`
+`public double area()` <br> `public double volume()`
 
-`public double volume()`
+### Create a public class Rectangle with private attributes :
 
-Create a public class Rectangle with private attributes :
+`double length` <br> `double width`
 
-`double length`
+**Write the public getters and setters for these attributes.
 
-`double width`
+> Rectangle class should inherit the `Shape` class
 
-Write the public getters and setters for these attributes.
+_Area of rectangle is length * width_
 
-Rectangle class should inherit the Shape class
+### Create a public class `Triangle` with private attributes :
 
-Area of rectangle is length * width
-
-Create a public class Triangle with private attributes :
-
-`double base`
-
-`double height`
-
-Write the public getters and setters for these attributes.
+`double base` <br> `double height` <br>
+**Write the public getters and setters for these attributes.
 
 Triangle class should inherit the Shape class
 
