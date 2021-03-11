@@ -2,11 +2,11 @@
 
 Create a class Student with the private attributes
 
- _int studentId_
+ _int studentId<br>
 _String studentName, studentAddress, collegeName_
 
 
-Include appropriate getter methods.
+### Include appropriate getter methods.
 Write 2 constructors for the ```Student``` class based on the below assumptions. 
 
 Assume most of the students are from “NIT” college. So user has to give input whether the student is from NIT or not. 
@@ -18,9 +18,9 @@ If student belongs to other college, give input as 'no/NO' and get college name 
 Instead of Yes / No, if user enters different input then display 'Wrong Input' and get the input again.
 Based on the above assumptions write the necessary constructors in the Student class.
 
-Write a class StudentMain with the main method and test the application. 
+Write a class ```StudentMain``` with the main method and test the application. 
 
-Get all the input needed from the main method. 
+**Get all the input needed from the main method.**
 
 > Sample Input 1:
 
