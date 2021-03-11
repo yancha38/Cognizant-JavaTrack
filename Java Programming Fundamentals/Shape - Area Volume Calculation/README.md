@@ -1,10 +1,10 @@
 # Shape - Area Volume Calculator
 
-### Create an abstract public class Shape with the below public abstract methods :
+#### Create an abstract public class _Shape_ with the below public abstract methods :
 
 `public double area()` <br> `public double volume()`
 
-#### Create a public class Rectangle with private attributes :
+#### Create a public class _Rectangle_ with private attributes :
 
 `double length` <br> `double width`
 
@@ -14,7 +14,7 @@
 
 _Area of rectangle is length * width_
 
-#### Create a public class `Triangle` with private attributes :
+#### Create a public class _Triangle_ with private attributes :
 
 `double base` <br> `double height` <br>
 **Write the public getters and setters for these attributes.**
@@ -23,7 +23,7 @@ _Area of rectangle is length * width_
 
 _Area of triangle is  1/2 * base * height_
 
-#### Create a public class Cube with private attributes :
+#### Create a public class _Cube_ with private attributes :
 
 `double length` <br> `double width` <br> `double height`
 
@@ -34,33 +34,28 @@ _Area of triangle is  1/2 * base * height_
 _Area of cube is  2 * length * width + 2 * length * height + 2* width * height_ <br>
 _Volume of cube is  length * width * height_
 
-Create a public class Sphere with private attributes :
+#### Create a public class _Sphere_ with private attributes :
 
 `double radius`
 
-Write the public getters and setters for these attributes.
+**Write the public getters and setters for these attributes.**
 
-Sphere class should inherit the Shape class
+> `Sphere` class should inherit the `Shape` class
 
-Area of  Sphere is  4  * PI * radius2
-
-Volume of Sphere is   ( 4  * PI * radius3 ) / 3
+_Area of  Sphere is  4  * PI * radius2_ <br>
+_Volume of Sphere is   ( 4  * PI * radius3 ) / 3_
 
 **Note : You should use Math.PI for the value of PI**
 
-For Rectangle and Triangle class the method volume should return -1.
+> For Rectangle and Triangle class the method volume should return -1.
 
-Create an interface Spatial which is a marker interface. Classes that has proper implementation for volume should implement this interface.
+- Create an interface Spatial which is a marker interface. Classes that has proper implementation for volume should implement this interface. <br>
+- Create a public Main class which has the main method. <br>
+- Create an array of Shape of size 5. <br>
 
-Create a public Main class which has the main method.
-
-Create an array of Shape of size 5.
-
-Get the Shape type and the corresponding attributes and store those objects in the array.
-
-Print the area and volume of the objects created.
-
-Volume of the array object should be printed only if it is of Spatial Type.
+**Get the Shape type and the corresponding attributes and store those objects in the array.** <br>
+- Print the area and volume of the objects created. <br>
+- Volume of the array object should be printed only if it is of Spatial Type. <br>
 
 > Sample Input :
 
