@@ -21,16 +21,16 @@ Write a main method in the Main class to test the application.
 **Sample input and output**
 
 Enter no of bookings:
-2
+2<br>
 Enter the available tickets:
-25
+25<br>
 Enter the ticketid:
-123
+123<br>
 Enter the price:
-100
+100<br>
 Enter the no of tickets:
-5
-Available tickets: 25
+5<br>
+Available tickets: 25<br>
 
 Total amount:500
 
