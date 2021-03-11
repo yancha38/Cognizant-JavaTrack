@@ -8,7 +8,7 @@
 
 `double length` <br> `double width`
 
-**Write the public getters and setters for these attributes.
+**Write the public getters and setters for these attributes.**
 
 > Rectangle class should inherit the `Shape` class
 
